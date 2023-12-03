@@ -1,6 +1,6 @@
 from setuptools import setup, find_packages
 
-import numpy as np
+# import numpy as np
 
 setup(name='tssb',
       version='0.1',
@@ -11,7 +11,7 @@ setup(name='tssb',
       packages=find_packages(exclude=['tests', 'examples']),
       package_data={'': ['LICENSE']},
       include_package_data=True,
-      install_requires=np.loadtxt(fname='requirements.txt', delimiter='\n', dtype=np.str).tolist(),
+      # install_requires=np.loadtxt(fname='requirements.txt', delimiter='\n', dtype=np.str).tolist(),
       long_description=open('README.md').read(),
       long_description_content_type="text/markdown",
       zip_safe=False)
